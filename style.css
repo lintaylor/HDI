@@ -1,0 +1,57 @@
+.main-container {
+    padding: 50px 30px;
+}
+
+.chart-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 32px 30px;
+    width: 900px;
+}
+
+.chart-title {
+    margin: 0;
+    padding: 0;
+    font-size: 45px;
+    font-family: 'aptly';
+    font-weight: 500;
+    font-size: 3.5em;
+}
+
+.select2-container {
+    width: 30% !important; /* Force the select2 container to take the full width */
+    font-family: 'adelle-sans-condensed';
+}
+
+.select2-container .select2-selection--single {
+    height: 30px; /* Or your desired height */
+    line-height: 30px; /* This should match the height for vertical centering */
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 10px; /* Adjust left padding as needed */
+    padding-right: 0px; /* Increase right padding to avoid overlap with the arrow */
+}
+
+.select2-container .select2-selection--single .select2-selection__clear {
+    position: relative;
+    right: 25px; /* Adjust the position of the clear button if needed */
+    z-index: 1; /* Ensure it's above other elements */
+}
+
+
+.select2-container .select2-dropdown {
+    border-color: #ccc !important;
+}
+
+#canvas-container {
+    position: relative;
+    width: 900px;
+}
+
+#countrySelect {
+    width: auto; /* Let Select2 control the width or set to '100%' if you want it to fill the container */
+    z-index: 10;
+}
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Scatterplot</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+
+    <!-- Add Select2 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zwl6tlj.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="chart-header-container">
+            <h1 class="chart-title">The HDI Gender Gap</h1>
+            <select id="countrySelect"></select>
+        </div>
+
+        <div id="canvas-container">
+            <script src="sketch04.js"></script>
+        </div>
+    </div>
+
+        <!-- Other scripts can be included here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#countrySelect').select2({
+                width: '100%' // This makes the Select2 box fit its container's width
+            });
+        });
+        $(document).ready(function() {
+        $('#countrySelect').select2({
+            placeholder: "Select a country",
+            allowClear: true
+        });
+    });
+    </script>
+
+</body>
+
+</html>
+    
+
+
+
+
